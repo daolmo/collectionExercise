@@ -7,7 +7,7 @@ myCollection += ["Hungarian Rhapsody No. 2 by Franz Liszt", "Un Sospiro by Franz
 
 
 print("This is my list of piano pieces I enjoy and want to learn to play soon!\n")
-for item in myCollection {
+for item in myCollection.sorted() {
     print(item)
 }
 
@@ -17,7 +17,7 @@ print("Oops, I forgot to add one!")
 myCollection.append("Ballade No. 1 by Frederick Chopin")
 
 print("*inserts code*\nThere we go!\n")
-for item in myCollection {
+for item in myCollection.sorted() {
     print(item)
 }
 
@@ -35,7 +35,7 @@ print("I finally tackled \(myCollection[0]), so let me remove that from my list.
 myCollection.removeFirst()
 print("\n\(myCollection.count) to go!\n")
 
-for item in myCollection {
+for item in myCollection.sorted() {
     print(item)
 }
 
